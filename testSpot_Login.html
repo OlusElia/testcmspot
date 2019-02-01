@@ -20,22 +20,22 @@
      passerr = 0;
      
      if(form.EMAIL.value == ''){
-       alert('ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B');
+       alert('ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚');
        form.EMAIL.focus();
        form.EMAIL.select();
        return;
      }else if(form.ConfEmail.value == ''){
-       alert('Šm”F—pƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B');
+       alert('ç¢ºèªç”¨ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚');
        form.ConfEmail.focus();
        form.ConfEmail.select();
        return;
      }else if(form.EMAIL.value != form.ConfEmail.value){
-       alert('V‚µ‚¢ƒ[ƒ‹ƒAƒhƒŒƒX‚ÆŠm”F—pƒ[ƒ‹ƒAƒhƒŒƒX‚ªˆá‚¢‚Ü‚·B');
+       alert('æ–°ã—ã„ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ç¢ºèªç”¨ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒé•ã„ã¾ã™ã€‚');
        form.ConfEmail.focus();
        form.ConfEmail.select();
        return;
      }else if (passStr.length < 8){
-       alert('V‹KƒpƒXƒ[ƒh‚Í8Œ…ˆÈã‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢');
+       alert('æ–°è¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯8æ¡ä»¥ä¸Šã§è¨˜å…¥ã—ã¦ãã ã•ã„');
        return;
      }
 
@@ -43,15 +43,15 @@
        if(okmoji.indexOf(passStr.charAt(i)) == -1) passerr++;
      }
      if(passerr!=0){
-       alert('V‹KƒpƒXƒ[ƒh‚Í”¼Šp‰p”Žš‚Å‹L“ü‚µ‚Ä‚­‚¾‚³‚¢');
+       alert('æ–°è¦ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¯åŠè§’è‹±æ•°å­—ã§è¨˜å…¥ã—ã¦ãã ã•ã„');
        return;
      }else if(form.CONFPASSWD.value == ''){
-       alert('Šm”F—pƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B');
+       alert('ç¢ºèªç”¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚');
        form.CONFPASSWD.focus();
        form.CONFPASSWD.select();
        return;
      }else if(form.PASSWD.value != form.CONFPASSWD.value){
-       alert('V‚µ‚¢ƒpƒXƒ[ƒh‚ÆŠm”F—pƒpƒXƒ[ƒh‚ªˆá‚¢‚Ü‚·B');
+       alert('æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã¨ç¢ºèªç”¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãŒé•ã„ã¾ã™ã€‚');
        form.CONFPASSWD.focus();
        form.CONFPASSWD.select();
        return;
@@ -60,13 +60,13 @@
          if(okstr.indexOf(str.charAt(i)) == -1) err++;
        }
        if(err!=0){
-         alert('ƒ[ƒ‹ƒAƒhƒŒƒX‚Ì“ü—Í‚Í”¼Šp‰p”Žš‚Å‚¨Šè‚¢‚µ‚Ü‚·B');
+         alert('ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å…¥åŠ›ã¯åŠè§’è‹±æ•°å­—ã§ãŠé¡˜ã„ã—ã¾ã™ã€‚');
          return;
        }else if (err==0){ 
          form.submit();
        }
      }else{
-       alert('ƒ[ƒ‹ƒAƒhƒŒƒX‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB');
+       alert('ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚');
        return;
      }
    }
@@ -77,7 +77,7 @@
      err = 0;
 
      if (form.EMAIL.value == '') {
-       alert('ƒ[ƒ‹ƒAƒhƒŒƒX‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B');
+       alert('ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚');
        form.EMAIL.focus();
        form.EMAIL.select();
        return;
@@ -86,7 +86,7 @@
          if(okstr.indexOf(str.charAt(i)) == -1) err++;
        }
        if(err!=0){
-         alert('ƒ[ƒ‹ƒAƒhƒŒƒX‚Ì“ü—Í‚Í”¼Šp‰p”Žš‚Å‚¨Šè‚¢‚µ‚Ü‚·B');
+         alert('ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®å…¥åŠ›ã¯åŠè§’è‹±æ•°å­—ã§ãŠé¡˜ã„ã—ã¾ã™ã€‚');
          form.EMAIL.focus();
          form.EMAIL.select();
          return;  
@@ -97,7 +97,7 @@
          form.submit();
        }
      }else{
-       alert('ƒ[ƒ‹ƒAƒhƒŒƒX‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñB');
+       alert('ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚');
        form.EMAIL.focus();
        form.EMAIL.select();
        return;
@@ -113,45 +113,46 @@
   <TR>
   <BR>
     <TD>
+	    <!--ã“ã“ã‚¹ãƒãƒƒãƒˆãƒ©ã‚¤ãƒˆï¼-->
     <img src="http://bono.mcmsolution.jp/bin/checker?spotIdx=1&mode=12&type=1&id=987654321&adid=12345678&category=main&subcategory=sub&amount=1000&quantity=2" width=0 height=0>
     
     <!--<img src="file:///C:/Users/a2183210/Desktop/testSpot_Login.html/bin/checker?spotIdx=1&mode=12&type=1&id=XXX&adid=XXX&category=XXX&subcategory=XXX&amount=XXX&quantity=XXX" width=0 height=0>-->
-    <!--“o˜^ƒtƒH[ƒ€-->
+    <!--ç™»éŒ²ãƒ•ã‚©ãƒ¼ãƒ -->
     <FORM name="CMLM_NEW" action="https://bono.mcmsolution.jp/cgi-bin/cmlm_newlogin" method="post">
-      <FONT size="3"><B>¡V‹K“o˜^</B><BR><BR></FONT>
-      <FONT size="2">ƒ[ƒ‹”zM‚²Šó–]‚Ì•û‚ÍAˆÈ‰º‚Ì•K—v€–Ú‚ð‚²“ü—Í‚ÌãAuŽŸ‚Öv‚Ìƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚µ‚Ä‚­‚¾‚³‚¢B</FONT><BR>
-        <BR><FONT size="2" color="red">*‚Í•K{“ü—Í€–Ú‚Å‚·B</FONT><BR><BR>
+      <FONT size="3"><B>â– æ–°è¦ç™»éŒ²</B><BR><BR></FONT>
+      <FONT size="2">ãƒ¡ãƒ¼ãƒ«é…ä¿¡ã”å¸Œæœ›ã®æ–¹ã¯ã€ä»¥ä¸‹ã®å¿…è¦é …ç›®ã‚’ã”å…¥åŠ›ã®ä¸Šã€ã€Œæ¬¡ã¸ã€ã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ãã ã•ã„ã€‚</FONT><BR>
+        <BR><FONT size="2" color="red">*ã¯å¿…é ˆå…¥åŠ›é …ç›®ã§ã™ã€‚</FONT><BR><BR>
         <TABLE bgColor="#F3F3F3" cellPadding="5" width="100%" border="0">
           <!-- EMAIL -->
           <TR>
-            <TD  bgColor="#CCCCCC"><FONT size="2"><B>*ƒ[ƒ‹ƒAƒhƒŒƒX</B></FONT></TD>
+            <TD  bgColor="#CCCCCC"><FONT size="2"><B>*ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹</B></FONT></TD>
             <TD width="60%">
 	    <INPUT  type="text" size="50" maxlength="128" name="EMAIL" autocomplete="off"><BR>
-            <FONT size=1>—á)aaaa@aaa.aa.jp</FONT></TD>
+            <FONT size=1>ä¾‹)aaaa@aaa.aa.jp</FONT></TD>
           </TR>
           <!-- CONFINE EMAIL -->
           <TR>
-            <TD  bgColor="#CCCCCC" nowrap><FONT size="2"><B>*ƒ[ƒ‹ƒAƒhƒŒƒX<BR>(Šm”F—p)</B></FONT></TD>
+            <TD  bgColor="#CCCCCC" nowrap><FONT size="2"><B>*ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹<BR>(ç¢ºèªç”¨)</B></FONT></TD>
             <TD width="60%">
 	    <INPUT  type="text" size="50" maxlength="128" name="ConfEmail" autocomplete="off"><BR>
-            <FONT size=1>Šm”F‚Ìˆ×“¯‚¶ƒ[ƒ‹ƒAƒhƒŒƒX‚ð‚²“ü—Í‚­‚¾‚³‚¢B</FONT></TD>
+            <FONT size=1>ç¢ºèªã®ç‚ºåŒã˜ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’ã”å…¥åŠ›ãã ã•ã„ã€‚</FONT></TD>
            </TR>
            <!-- PASSWORD -->
            <TR>
-             <TD  bgColor="#CCCCCC"><FONT size="2"><B>*ƒpƒXƒ[ƒh</B></FONT></TD>
+             <TD  bgColor="#CCCCCC"><FONT size="2"><B>*ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰</B></FONT></TD>
              <TD width="60%">
              <INPUT  type="password" size="50" maxlength="128" autocomplete="off" name="PASSWD"><BR>
-             <FONT size="1">¦8•¶ŽšˆÈã32•¶ŽšˆÈ“à”¼Šp‰p”Žš</FONT> </TD>
+             <FONT size="1">â€»8æ–‡å­—ä»¥ä¸Š32æ–‡å­—ä»¥å†…åŠè§’è‹±æ•°å­—</FONT> </TD>
            </TR>
            <!-- CONFINE PASSWORD -->
            <TR>
-           <TD  bgColor="#CCCCCC"><FONT size="2"><B>*ƒpƒXƒ[ƒh<BR>(Šm”F—p)</B></FONT></TD>
+           <TD  bgColor="#CCCCCC"><FONT size="2"><B>*ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰<BR>(ç¢ºèªç”¨)</B></FONT></TD>
            <TD width="60%"><INPUT  type="password" size="50" maxlength="128" autocomplete="off" name="CONFPASSWD"><BR>
-           <FONT size="1">Šm”F‚Ìˆ×“¯‚¶ƒpƒXƒ[ƒh‚ð‚²“ü—Í‚­‚¾‚³‚¢B</FONT></TD>
+           <FONT size="1">ç¢ºèªã®ç‚ºåŒã˜ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ã”å…¥åŠ›ãã ã•ã„ã€‚</FONT></TD>
          </TR>
          
          <TR>
-           <TD ><INPUT  type="button" value="ŽŸ‚Ö" onclick="NewUser_Check(this.form)"></TD>
+           <TD ><INPUT  type="button" value="æ¬¡ã¸" onclick="NewUser_Check(this.form)"></TD>
            <TD width="60%"></TD>
          </TR>
        </TABLE><BR><BR>
@@ -164,22 +165,22 @@
      </FORM>
      <FORM name="CMLM_LOGIN" action="https://bono.mcmsolution.jp/cgi-bin/cmlm_login" method=post>
      <!-- LOGIN PAGE -->	
-       <FONT size="3">¡<B>“o˜^î•ñ‚Ì•ÏX^”zM’âŽ~</B></FONT><BR><BR>
-       <FONT size="2">‚²“o˜^‚³‚ê‚Ä‚¢‚éƒ[ƒ‹ƒAƒhƒŒƒX‚ÆƒpƒXƒ[ƒh‚ð‚²“ü—Í‚­‚¾‚³‚¢B<BR><BR>
-       <B>ƒƒpƒXƒ[ƒh‚ð‚¨–Y‚ê‚Ìê‡„</B><BR>
-       ƒpƒXƒ[ƒh‚ð‚¨–Y‚ê‚Ì•û‚ÍAƒ[ƒ‹ƒAƒhƒŒƒX‚Ì‚Ý‚²“ü—Í’¸‚«AŽŸ‚Ö‚Ìƒ{ƒ^ƒ““™‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B</FONT><BR>
-       <BR><FONT size="2" color="red">*‚Í•K{“ü—Í€–Ú‚Å‚·B</FONT><BR><BR>
+       <FONT size="3">â– <B>ç™»éŒ²æƒ…å ±ã®å¤‰æ›´ï¼é…ä¿¡åœæ­¢</B></FONT><BR><BR>
+       <FONT size="2">ã”ç™»éŒ²ã•ã‚Œã¦ã„ã‚‹ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã¨ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ã”å…¥åŠ›ãã ã•ã„ã€‚<BR><BR>
+       <B>ï¼œãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãŠå¿˜ã‚Œã®å ´åˆï¼ž</B><BR>
+       ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’ãŠå¿˜ã‚Œã®æ–¹ã¯ã€ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹ã®ã¿ã”å…¥åŠ›é ‚ãã€æ¬¡ã¸ã®ãƒœã‚¿ãƒ³ç­‰æŠ¼ã—ã¦ãã ã•ã„ã€‚</FONT><BR>
+       <BR><FONT size="2" color="red">*ã¯å¿…é ˆå…¥åŠ›é …ç›®ã§ã™ã€‚</FONT><BR><BR>
       <TABLE bgColor="#F3F3F3" cellPadding="5" width="100%" border="0">
         <TR>
-          <TD  bgColor="#CCCCCC"><FONT size=2><B>*ƒ[ƒ‹ƒAƒhƒŒƒX</B></FONT></TD>
+          <TD  bgColor="#CCCCCC"><FONT size=2><B>*ãƒ¡ãƒ¼ãƒ«ã‚¢ãƒ‰ãƒ¬ã‚¹</B></FONT></TD>
           <TD width="60%"><INPUT type="text"  size="50" maxlength=128 name="EMAIL" autocomplete="off"></TD>
         </TR>
         <TR>
-          <TD  bgColor="#CCCCCC"><FONT size=2><B>*ƒpƒXƒ[ƒh</B></FONT></TD>
+          <TD  bgColor="#CCCCCC"><FONT size=2><B>*ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰</B></FONT></TD>
           <TD width="60%"><INPUT type="password" size="50" maxlength="128" autocomplete="off" name="PASSWD"></TD>
         </TR>
         <TR>
-          <TD ><INPUT  type="button" value="ŽŸ‚Ö" onclick="Login_Check(this.form)"></TD>
+          <TD ><INPUT  type="button" value="æ¬¡ã¸" onclick="Login_Check(this.form)"></TD>
         </TR>
       </TABLE><BR><BR>
      </TD>
